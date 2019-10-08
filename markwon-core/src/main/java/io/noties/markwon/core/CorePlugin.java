@@ -322,7 +322,8 @@ public class CorePlugin extends AbstractMarkwonPlugin {
 
         visitor.builder()
                 .append('\u00a0').append('\n')
-                .append(visitor.configuration().syntaxHighlight().highlight(info, code));
+                .append(visitor.configuration().syntaxHighlight().highlight(info, code))
+                .append(' ');
 
         visitor.ensureNewLine();
 
